@@ -1,0 +1,102 @@
+eth.getBalance(eth.coinbase)
+eth.blockNumber
+eth.getBalance(eth.coinbase)
+eth.getTransaction('0x150ae18d47ef62ba66b115103585be2fcd3e0292b1f9dcd9fb5f02f48a40b3cf')
+eth.getBalance(eth.coinbase)
+eth.blockNumber
+eth.coinbase
+function checkAllBalances() {
+    var totalBal = 0;
+    for (var acctNum in eth.accounts) {
+        var acct = eth.accounts[acctNum];
+        var acctBal = web3.fromWei(eth.getBalance(acct), "ether");
+        totalBal += parseFloat(acctBal);
+        console.log("  eth.accounts[" + acctNum + "]: \t" + acct + " \tbalance: " + acctBal + " ether");
+    }
+    console.log("  Total balance: " + totalBal + " ether");
+};
+checkAllBalances()
+miner.setEtherbase(7d82095715752f45b048d056a4383e013a4bf2ee)
+miner.setEtherbase(0x7d82095715752f45b048d056a4383e013a4bf2ee)
+eth.coinbase
+eth.accounts
+eth.getBalance
+eth.getBalance()
+eth.getBalance(eth.coinbase)
+eth.getBalance(eth.accounts[2])
+miner.setEtherbase(eth.accounts[2])
+eth.coinbase
+eth.getBalance(eth.coinbase)
+eth.accounts
+eth.getBlock(1)
+eth.getBlock(0)
+eth.blockNUmber
+eth.blockNumber
+eth.getBlock(1000)
+eth.getHashrate()
+eth.mining
+eth.mining()
+eth.defaultBlock
+eth.contract
+eth.getBlock
+eth.getBlock()
+blockNUmber
+blockNumber
+eth.blockNumber
+eth.getBalance
+eth.getBalance()
+eth.getBalance(eth.coinbase)
+miner.start()
+function checkAllBalances() {
+    var totalBal = 0;
+    for (var acctNum in eth.accounts) {
+        var acct = eth.accounts[acctNum];
+        var acctBal = web3.fromWei(eth.getBalance(acct), "ether");
+        totalBal += parseFloat(acctBal);
+        console.log("  eth.accounts[" + acctNum + "]: \t" + acct + " \tbalance: " + acctBal + " ether");
+    }
+    console.log("  Total balance: " + totalBal + " ether");
+};
+checkAllBalances()
+miner.start()
+eth.getBlock(0)
+eth.getBalance(eth.coinbase)
+miner.start()
+eth.getBalance(eth.coinbase)
+MINER.START()
+miner.start()
+eth.getBalance(eth.coinbase)
+miner.start()
+function checkAllBalances() {
+     var totalBal = 0;
+     for (var acctNum in eth.accounts) {
+         var acct = eth.accounts[acctNum];
+         var acctBal = web3.fromWei(eth.getBalance(acct), "ether");
+         totalBal += parseFloat(acctBal);
+         console.log("  eth.accounts[" + acctNum + "]: \t" + acct + " \tbalance: " + acctBal + " ether");
+     }
+     console.log("  Total balance: " + totalBal + " ether");
+ };
+miner.start()
+eth.blockNumber
+exit()
+miner.start()
+miner.stop()
+eth.sendTransaction({'from':eth.coinbase, 'to':'0x7092fbc7f89c81e4118c481f822cc6e128fc6365', 'value':web3.toWei(3, 'ether')}
+)
+eth.getRawTransaction(0x36bfc6b385dfb08b1e3976d5a073e2ef582dab59ffb4722df09c5fa97373699d)
+eth.getBlock(0x36bfc6b385dfb08b1e3976d5a073e2ef582dab59ffb4722df09c5fa97373699d)
+eth.getBlock(36bfc6b385dfb08b1e3976d5a073e2ef582dab59ffb4722df09c5fa97373699d)
+function checkAllBalances() {
+     var totalBal = 0;
+     for (var acctNum in eth.accounts) {
+         var acct = eth.accounts[acctNum];
+         var acctBal = web3.fromWei(eth.getBalance(acct), "ether");
+         totalBal += parseFloat(acctBal);
+         console.log("  eth.accounts[" + acctNum + "]: \t" + acct + " \tbalance: " + acctBal + " ether");
+     }
+     console.log("  Total balance: " + totalBal + " ether");
+ };
+checkAllBalances
+checkAllBalances()
+miner.start()

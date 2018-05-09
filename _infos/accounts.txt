@@ -1,0 +1,22 @@
+student 0
+7d82095715752f45b048d056a4383e013a4bf2ee
+student 1
+58f998ac0db4cd278459f83ab2ad7a0bbddd48ef
+student 2
+7092fbc7f89c81e4118c481f822cc6e128fc6365
+
+
+ext contract student 0
+0x0b97faD2D965fCCD1e807C3073728E48eA060B48
+
+ext contract student 1
+0xCc3ae629506fB53A26c9Fc58eCdbAC091711b0b2
+
+ext contract student 2
+0x7e082ce59389d3C00d80064d52dacFFdBAEDDcc8
+
+UniversityScree votes
+0xb296046B30bFfE02d0111D824Aa86a0D65ec95B8
+
+University MA
+0xCf67708873388542Db6B8A32A65FDAD02782C000
