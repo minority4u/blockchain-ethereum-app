@@ -13,13 +13,14 @@ Ethereum test-network ready to use. This demo consists of:
 The Smart Contract code is stored in "_infos/". They are based on the Ethereum-Templates: https://www.ethereum.org/token
 
 
-# Base Tutorial
 
-The current network file structure looks like that:
+# Network structure:
 
 
 ![Devnet structure](https://github.com/minority4u/Ethereum_network/blob/master/_infos/images/Structure.png "Devnet Structure") 
 
+# Project files and folder
+Description of all important files wthin the project
 
 ## _infos directory 
 	For example screenshots and further network infos as the accunts.txt
