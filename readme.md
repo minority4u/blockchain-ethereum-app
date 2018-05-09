@@ -89,16 +89,16 @@ enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22
 
 > open -a /Applications/"Ethereum Wallet.app" --args  --rpcport "8500" --rpc $HOME/Git/Ethereum:network/devnet/node0/geth.ipc
 
-* To follow all transactions of the University-Votes-Token and the University-DAO, please go to the "contracts"-Tab and add the two smart contract-accounts:
-
-..* Token: 0xb296046B30bFfE02d0111D824Aa86a0D65ec95B8
-..* DAO: 0xCf67708873388542Db6B8A32A65FDAD02782C000
-
 * Check the botnode console, can you see every working Node?
 
 * After 1-2 minutes Node1 and Node2 should start mining, you can start the miner of Node0 with:
 
 > miner.start()
+
+* To follow all transactions of the University-Votes-Token and the University-DAO, please go to the "contracts"-Tab and add the two smart contract-accounts:
+
+..* Token: 0xb296046B30bFfE02d0111D824Aa86a0D65ec95B8
+..* DAO: 0xCf67708873388542Db6B8A32A65FDAD02782C000
 
 * Enjoy! ;)
 
