@@ -1,4 +1,4 @@
-# Hint
+# 1. General Hint
 Do not use the provided accounts for real transactions in the main-ethreum-network!!!
 
 Ethereum test-network ready to use. This demo consists of:
@@ -14,7 +14,7 @@ The Smart Contract code is stored in "_infos/". They are based on the Ethereum-T
 
 
 
-# Network structure:
+# 2. Network structure:
 
 ![Devnet structure](https://github.com/minority4u/Ethereum_network/blob/master/_infos/images/Structure.png "Devnet Structure") 
 
@@ -45,7 +45,7 @@ Description of all important files wthin the project
 	Setup instructions
 
 
-# Ethereum Network Setup 
+# 3. Ethereum Network Setup 
 * Tested with OSX 10.13.4
 
 ## Requirements
@@ -109,7 +109,7 @@ enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22
 * Enjoy! ;)
 
 
-# Delete all past block data = new init of the genesis-block
+# 4. Delete all past block data = new init of the genesis-block
 * stop all Nodes and the bootnode
 * remove the geth and history folders
 * geth --datadir node0/ init genesis.json
@@ -118,7 +118,7 @@ enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22
 * startup the bootnode and the working nodes
 
 
-# Some initial help
+# 5. Some initial help
 ## Help if Port is in Use:
 https://github.com/ethereum/mist/wiki#bind-address-already-in-use
 
