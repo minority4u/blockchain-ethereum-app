@@ -87,7 +87,7 @@ enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22
 
 * Start the Ethereum Wallet, --> adjust the "--prc param" to the working dir of your Node0
 
-> open -a /Applications/"Ethereum Wallet.app" --args  --rpcport "8500" --rpc $HOME/Git/Ethereum:network/devnet/node0/geth.ipc
+> open -a /Applications/"Ethereum Wallet.app" --args  --rpcport "8500" --rpc $HOME/Git/Ethereum_network/devnet/node0/geth.ipc
 
 * Check the botnode console, can you see every working Node?
 
