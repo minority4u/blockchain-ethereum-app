@@ -15,6 +15,8 @@ Ethereum test-network ready to use. This demo consists of:
 The current network file structure looks like that:
 
 
+![Devnet structure](https://github.com/minority4u/Ethereum_network/tree/master/_infos/Structure.png) 
+
 ├── _infos
 │   ├── accounts.txt
 │   └── images
