@@ -16,7 +16,6 @@ The Smart Contract code is stored in "_infos/". They are based on the Ethereum-T
 
 # Network structure:
 
-
 ![Devnet structure](https://github.com/minority4u/Ethereum_network/blob/master/_infos/images/Structure.png "Devnet Structure") 
 
 # Project files and folder
@@ -46,17 +45,19 @@ Description of all important files wthin the project
 	Setup instructions
 
 
-# Setup 
-Tested with OSX 10.13.4
+# Ethereum Network Setup 
+* Tested with OSX 10.13.4
+* Brew installed --> https://docs.brew.sh/Installation
 
 ## Requirements
 * Ethereum Wallet (https://github.com/ethereum/mist/releases)
-* the bootnode executeable needs to be available (https://github.com/ethereum/homebrew-ethereum/pull/114)
+* The bootnode executeable needs to be available (https://github.com/ethereum/homebrew-ethereum/pull/114)
 
 ## Steps
-* 'Git clone'
-* 'cd Ethereum_network/devnet'
-* start bootnode:
+* Git clone
+* Open Terminal
+* Change to working directory: Ethereum_network/devnet
+* Start bootnode:
 
 >bootnode -nodekey boot.key -verbosity 9 -addr :30310
 
@@ -97,13 +98,13 @@ enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22
 
 * To follow all transactions of the University-Votes-Token and the University-DAO, please go to the "contracts"-Tab and add the two smart contract-accounts:
 
-Token: 
+ Token
 
-> 0xb296046B30bFfE02d0111D824Aa86a0D65ec95B8
+    > 0xb296046B30bFfE02d0111D824Aa86a0D65ec95B8
 
-DAO: 
+ DAO: 
 
-> 0xCf67708873388542Db6B8A32A65FDAD02782C000
+    > 0xCf67708873388542Db6B8A32A65FDAD02782C000
 
 * Enjoy! ;)
 
