@@ -69,8 +69,6 @@ enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22
 
 * Start Node0 - no mining, multiple keystore files for later Ethereum Wallet usage, --> adjust the bootnode-param
 
-> To start the miner of Node0, type "miner.start()" in the javascript console of Node0
-
 > geth --datadir node0/ --etherbase '7d82095715752f45b048d056a4383e013a4bf2ee' --syncmode 'full' --port 30320 --rpc --rpcaddr 'localhost' --rpcport 8500 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22cfc2b7c1bdf8ece179ee1e45fc3b988d54287443534cd4f72602d859@127.0.0.1:30310' --networkid 42 --gasprice '1' --unlock '7d82095715752f45b048d056a4383e013a4bf2ee' --password node0/password.txt console 2>>node0.log
 
 * Start Node1, single keystore file, mining --> adjust the bootnode-param
@@ -96,10 +94,16 @@ enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22
 ..* Token: 0xb296046B30bFfE02d0111D824Aa86a0D65ec95B8
 ..* DAO: 0xCf67708873388542Db6B8A32A65FDAD02782C000
 
+* Check the botnode console, can you see every working Node?
+
+* After 1-2 minutes Node1 and Node2 should start mining, you can start the miner of Node0 with:
+
+> miner.start()
+
 * Enjoy! ;)
 
 
-# If you want to delete all past data = new init of the genesis-block
+# Delete all past block data = new init of the genesis-block
 * stop all Nodes and the bootnode
 * remove the geth and history folders
 * geth --datadir node0/ init genesis.json
@@ -112,7 +116,7 @@ enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22
 ## Help if Port is in Use:
 https://github.com/ethereum/mist/wiki#bind-address-already-in-use
 
-## Example-test the RPC Interface via vurl or postman
+## Example-usage of the RPC Interface via curl or postman
 curl http://localhost:8500 -X POST --data '{"jsonrpc":"2.0","method":"eth_getBalance","params":["0x7d82095715752f45b048d056a4383e013a4bf2ee","latest"],"id":1}'
 
 ## Example Javascript-Console comands
