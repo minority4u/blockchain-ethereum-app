@@ -10,6 +10,9 @@ Ethereum test-network ready to use. This demo consists of:
 * Own Token (Unversity Votes) deployed as Smart-Contract with tokens/vote rights splitted between all accounts and their public contracts
 * DAO (University Mannheim). Every owner of the University token is automatically member of the DAO and is allowed to create proposals and votes.
 
+The Smart Contract code is stored in "_infos/". They are based on the Ethereum-Templates: https://www.ethereum.org/token
+
+
 # Base Tutorial
 
 The current network file structure looks like that:
