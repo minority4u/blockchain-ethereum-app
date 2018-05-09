@@ -54,47 +54,47 @@ Description of all important files wthin the project
 * The bootnode executeable needs to be available (https://github.com/ethereum/homebrew-ethereum/pull/114)
 
 ## Steps
-* Git clone
+* Git clone Project
 * Open Terminal
 * Change to working directory: Ethereum_network/devnet
+
 * Start bootnode:
 
->bootnode -nodekey boot.key -verbosity 9 -addr :30310
+    >bootnode -nodekey boot.key -verbosity 9 -addr :30310
 
-* Bootnode should return it name, write it down or copy it, example output: 
+* Bootnode should return it name, write it down or copy it, example output.
 
->bootnode:
-enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22cfc2b7c1bdf8ece179ee1e45fc3b988d54287443534cd4f72602d859@[::]:30310
+    > "bootnode:
+enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22cfc2b7c1bdf8ece179ee1e45fc3b988d54287443534cd4f72602d859@[::]:30310"
 
 * Start a new terminal with three tabs and go to the devnet dir
 
 * Start Node0 - no mining, multiple keystore files for later Ethereum Wallet usage, --> adjust the bootnode-param
 
-> geth --datadir node0/ --etherbase '7d82095715752f45b048d056a4383e013a4bf2ee' --syncmode 'full' --port 30320 --rpc --rpcaddr 'localhost' --rpcport 8500 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22cfc2b7c1bdf8ece179ee1e45fc3b988d54287443534cd4f72602d859@127.0.0.1:30310' --networkid 42 --gasprice '1' --unlock '7d82095715752f45b048d056a4383e013a4bf2ee' --password node0/password.txt console 2>>node0.log
+    > geth --datadir node0/ --etherbase '7d82095715752f45b048d056a4383e013a4bf2ee' --syncmode 'full' --port 30320 --rpc --rpcaddr 'localhost' --rpcport 8500 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22cfc2b7c1bdf8ece179ee1e45fc3b988d54287443534cd4f72602d859@127.0.0.1:30310' --networkid 42 --gasprice '1' --unlock '7d82095715752f45b048d056a4383e013a4bf2ee' --password node0/password.txt console 2>>node0.log
 
 * Start Node1, single keystore file, mining --> adjust the bootnode-param
 
-> geth --datadir node1/ --syncmode 'full' --port 30321 --rpc --rpcaddr 'localhost' --rpcport 8501 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22cfc2b7c1bdf8ece179ee1e45fc3b988d54287443534cd4f72602d859@127.0.0.1:30310' --networkid 42 --gasprice '1' --unlock '58f998ac0db4cd278459f83ab2ad7a0bbddd48ef' --password node1/password.txt --mine console 2>>node1.log
+    > geth --datadir node1/ --syncmode 'full' --port 30321 --rpc --rpcaddr 'localhost' --rpcport 8501 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22cfc2b7c1bdf8ece179ee1e45fc3b988d54287443534cd4f72602d859@127.0.0.1:30310' --networkid 42 --gasprice '1' --unlock '58f998ac0db4cd278459f83ab2ad7a0bbddd48ef' --password node1/password.txt --mine console 2>>node1.log
 
 * Start Node2 single keystore file, mining --> adjust the bootnode-param
 
-> geth --datadir node2/ --syncmode 'full' --port 30322 --rpc --rpcaddr 'localhost' --rpcport 8502 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22cfc2b7c1bdf8ece179ee1e45fc3b988d54287443534cd4f72602d859@127.0.0.1:30310' --networkid 42 --gasprice '1' --unlock '7092fbc7f89c81e4118c481f822cc6e128fc6365' --password node2/password.txt --mine console 2>>node2.log
+    > geth --datadir node2/ --syncmode 'full' --port 30322 --rpc --rpcaddr 'localhost' --rpcport 8502 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://6119af548bfdc5948a8e440f50b054ae75be7f9cbf3ef8d0681a905cc7cd326587690d22cfc2b7c1bdf8ece179ee1e45fc3b988d54287443534cd4f72602d859@127.0.0.1:30310' --networkid 42 --gasprice '1' --unlock '7092fbc7f89c81e4118c481f822cc6e128fc6365' --password node2/password.txt --mine console 2>>node2.log
 
-* Start a new terminal with three tabs for our logs and open all three logfiles
+* Start a new terminal with three tabs for our logs and open all three logfiles.
 
-> tail -f node0.log
-> tail -f node1.log
-> tail -f node2.log
+    > tail -f node0.log,  tail -f node1.log, tail -f node2.log
+
 
 * Start the Ethereum Wallet, --> adjust the "--prc param" to the working dir of your Node0
 
-> open -a /Applications/"Ethereum Wallet.app" --args  --rpcport "8500" --rpc $HOME/Git/Ethereum_network/devnet/node0/geth.ipc
+    > open -a /Applications/"Ethereum Wallet.app" --args  --rpcport "8500" --rpc $HOME/Git/Ethereum_network/devnet/node0/geth.ipc
 
 * Check the botnode console, can you see every working Node?
 
 * After 1-2 minutes Node1 and Node2 should start mining, you can start the miner of Node0 with:
 
-> miner.start()
+    > miner.start()
 
 * To follow all transactions of the University-Votes-Token and the University-DAO, please go to the "contracts"-Tab and add the two smart contract-accounts:
 
