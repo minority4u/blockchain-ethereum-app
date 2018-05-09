@@ -17,32 +17,6 @@ The current network file structure looks like that:
 
 ![Devnet structure](https://github.com/minority4u/Ethereum_network/blob/master/_infos/images/Structure.png "Devnet Structure") 
 
-├── _infos
-│   ├── accounts.txt
-│   └── images
-├── devnet
-│   ├── boot.key
-│   ├── genesis.json
-│   ├── node0
-│   │   ├── geth
-│   │   ├── history
-│   │   ├── keystore
-│   │   └── password.txt
-│   ├── node0.log
-│   ├── node1
-│   │   ├── geth
-│   │   ├── history
-│   │   ├── keystore
-│   │   └── password.txt
-│   ├── node1.log
-│   ├── node2
-│   │   ├── geth
-│   │   ├── history
-│   │   ├── keystore
-│   │   └── password.txt
-│   └── node2.log
-└── readme.md
-
 
 ## _infos directory 
 	For example screenshots and further network infos as the accunts.txt
