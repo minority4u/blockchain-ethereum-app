@@ -47,11 +47,11 @@ Description of all important files wthin the project
 
 # Ethereum Network Setup 
 * Tested with OSX 10.13.4
-* Brew installed --> https://docs.brew.sh/Installation
 
 ## Requirements
 * Ethereum Wallet (https://github.com/ethereum/mist/releases)
 * The bootnode executeable needs to be available (https://github.com/ethereum/homebrew-ethereum/pull/114)
+* Brew installed --> (https://docs.brew.sh/Installation)
 
 ## Steps
 * Git clone Project
