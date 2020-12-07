@@ -1,16 +1,18 @@
 # 1. General Hint
 Do not use the provided accounts for real transactions in the main-ethreum-network!!!
 
-Ethereum test-network ready to use. This demo consists of:
+Ethereum test-network which enables a public voting based on a limited currency. This could be used for universities or campanies to create their own voting system with the possibility of vote-sharing and automated actions triggered by a certain number of votes. Demo is ready to use. 
+
+## This demo consists of:
 
 * Three mining nodes
 * External Contracts owned by each account to encapusalte the minning accounts
 * More than 1800 already mined blocks
 * Lots of past transactions stored in the logfiles and history
-* Own Token (Unversity Votes) deployed as Smart-Contract with tokens/vote rights splitted between all accounts and their public contracts
+* Own token (Unversity Votes) deployed as Smart-Contract with tokens/vote rights splitted between all accounts and their public contracts
 * DAO (University Mannheim). Every owner of the University token is automatically member of the DAO and is allowed to create proposals and votes.
 
-The Smart Contract code is stored in "_infos/". They are based on the Ethereum-Templates: https://www.ethereum.org/token
+The Smart-Contract code is stored in "_infos/". They are based on the Ethereum-Templates: https://www.ethereum.org/token
 
 
 
