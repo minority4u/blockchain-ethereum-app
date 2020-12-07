@@ -1,7 +1,11 @@
-# 1. General Hint
-Do not use the provided accounts for real transactions in the main-ethreum-network!!!
 
-Ethereum test-network which enables a public voting based on a limited currency. This could be used for universities or campanies to create their own voting system with the possibility of vote-sharing and automated actions triggered by a certain number of votes. Demo is ready to use. 
+# Ethereum based own samrt contract implementation for a corporate voting system
+
+
+Ethereum test-network which enables a public voting based on a limited currency. This could be used for universities or campanies to create their own voting system with the possibility of vote-sharing and automated actions triggered by a certain number of votes. Demo is ready to use.
+
+* General Hint
+Do not use the provided accounts for real transactions in the main-ethreum-network, Use them only withon the test-network setting!!!
 
 ## This demo consists of:
 
